@@ -8,7 +8,7 @@ body {
 header {
     background-color: #298616;
     padding: 10px 0;
-    align-items: center;
+    
     
 }
 header img {
@@ -19,13 +19,29 @@ header img {
 }
 header h1 {
     color: #ffffff;
-    text-align: center;
+    text-align: center;;
     -webkit-text-stroke: 1px black ;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     
 }
 
+.header-title{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    color: #ffffff;
+    -webkit-text-stroke: 1px black ;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header-title img{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: auto;
+    position: left;
+    margin-top: 10px;
+}
 nav {
     
     text-align: center;
@@ -78,11 +94,9 @@ li {
     top: 0;
 }
 .qr-code img {
-    -webkit-border-image: 0 0 10px rgba(0, 0, 0, 0.5);
-    bo: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: #004d00 5px solid;
     border-radius: 10px;
 }
-
 section {
     display: flex;
     align-items: center;
@@ -94,7 +108,10 @@ section h2, section p {
     margin: 0px 300px 80px 150px;
     position: relative;
     top: 0;
+    font-family:Arial, Helvetica, sans-serif ;
 }
+
+
 
 footer {
     background: #298616;
@@ -104,4 +121,12 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+}
+
+.icons {
+    display: flex;
+    justify-content: left;
+    margin-top: -50px;
+    margin-left: 100px;
+    
 }
