@@ -78,8 +78,8 @@ li {
     top: 0;
 }
 .qr-code img {
-    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    -webkit-border-image: 0 0 10px rgba(0, 0, 0, 0.5);
+    bo: 0 0 10px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
 }
 
