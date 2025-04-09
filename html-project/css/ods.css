@@ -1,0 +1,22 @@
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Alinha os itens à esquerda */
+    justify-content: flex-start;
+    margin: 20px 0;
+}
+
+section img {
+    display: block; /* Faz com que cada imagem ocupe uma linha */
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px; /* Espaçamento entre as imagens */
+    border: #000000 5px solid;
+}
+
+.ods-section h2, .ods-section p {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 1.5em;
+    color: #000000;
+}

@@ -7,15 +7,22 @@ body {
 
 header {
     background-color: #298616;
-    padding: 10px 0;
+    padding: 10px 0 0 ;
     
     
 }
-header img {
+.header-logo {
     display: block;
     margin: 0 auto;
     max-width: 100px; 
     height: auto;
+}
+.header-logo img {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    position:relative;
 }
 header h1 {
     color: #ffffff;
@@ -42,6 +49,16 @@ header h1 {
     position: left;
     margin-top: 10px;
 }
+/* Imagem LGPD alinhada ao topo e à esquerda */
+.lgpd {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.lgpd img {
+    max-width: auto;
+    max-height: auto;
+}
 nav {
     
     text-align: center;
@@ -61,6 +78,7 @@ nav a {
     text-decoration: none;
     padding: 10px 20px;
     display: inline-block;
+
 }
 
 
