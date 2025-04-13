@@ -11,12 +11,14 @@ header {
     
     
 }
+
 .header-logo {
     display: block;
     margin: 0 auto;
     max-width: 100px; 
     height: auto;
 }
+
 .header-logo img {
     width: 100%;
     height: auto;
@@ -39,7 +41,7 @@ header h1 {
     text-align: center;
     margin-top: 10px;
     color: #ffffff;
-    -webkit-text-stroke: 1px black ;
+    -webkit-text-stroke: 1px black;
     font-family: Arial, Helvetica, sans-serif;
 }
 .header-title img{
@@ -93,12 +95,11 @@ ul {
     padding: 0;
     
 }
+
 li {
     display: inline;
     margin: 0 10px;
 }
-
-
 
 .container {
     width: 80%;
@@ -111,10 +112,12 @@ li {
     position: relative;
     top: 0;
 }
+
 .qr-code img {
     border: #004d00 5px solid;
     border-radius: 10px;
 }
+
 section {
     display: flex;
     align-items: center;
@@ -129,8 +132,6 @@ section h2, section p {
     font-family:Arial, Helvetica, sans-serif ;
 }
 
-
-
 footer {
     background: #298616;
     color: #ffffff;
@@ -141,10 +142,29 @@ footer {
     width: 100%;
 }
 
+.parceiros {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    margin-top: 0px;
+    margin-left: 10px;
+    
+}
+
+.parceiros h4 {
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; 
+}
+
 .icons {
     display: flex;
     justify-content: left;
     margin-top: -50px;
-    margin-left: 100px;
+    margin-left: 200px;
     
 }
+

@@ -1,17 +1,25 @@
 section {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Alinha os itens à esquerda */
+    align-items: center; 
     justify-content: flex-start;
     margin: 20px 0;
 }
-
+.ods-cards { 
+    display: flex;
+    grid-template-columns: auto 1fr;  /*  Duas colunas, uma para a imagem e outra para o texto */
+    column-gap: 10px;
+    align-items: center;
+    margin-bottom: 15px;
+    width: 100%;
+    max-width: 600px; 
+}
 section img {
-    display: block; /* Faz com que cada imagem ocupe uma linha */
     width: 100px;
     height: 100px;
-    margin-bottom: 10px; /* Espaçamento entre as imagens */
+    margin-bottom: 10px;
     border: #000000 5px solid;
+    
 }
 
 .ods-section h2, .ods-section p {
@@ -19,4 +27,17 @@ section img {
     margin: 10px 0;
     font-size: 1.5em;
     color: #000000;
+}
+.ods-section p {
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 1em; 
+    color: #000000; 
+    font-style: italic;
+    text-align: center;
+}
+
+.ods-cards p { 
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 1em; 
+    color: #000; 
 }
