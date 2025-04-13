@@ -16,10 +16,10 @@ html-project
  HTML pages
 ├── js
 │   └── scripts.js    # JavaScript file for adding interactivity
-└── README.md         # Documentation for the project
+└── README.md         # Documentação do projeto
 ```
 
-## Technologies Used
+## Tecnologias Usadas
 
 - HTML
 - CSS
