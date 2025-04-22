@@ -1,26 +1,96 @@
 
-.card {
-    display:grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows:  repeat(2, 2fr);
-    row-gap: 20px;
-    column-gap: 20px;
-    justify-content:center space-between;
-    align-items: center;
-}
-.card-images {
-    border: 5px solid #298616;
-    
-}
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
-.card-images  img{
-    
-    width: 100px;
-    height: 100px;
-    
-}
+  
 
-.card-images img:hover {
-    transform: scale(1.1);
-    transition: 0.3s;
+  
+
+ 
+  
+  .intro h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #27ae60;
+  }
+  
+  .grid-empresas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card h3 {
+    color: #2ecc71;
+    margin-bottom: 15px;
+  }
+  
+  .card p {
+    font-size: 0.95rem;
+    color: #555;
+  }
+  
+  /* Animações */
+  .fade-in {
+    animation: fadeInUp 0.6s ease forwards;
+  }
+  
+  .delay-1 {
+    animation-delay: 0.4s;
+  }
+  
+  .delay-2 {
+    animation-delay: 0.6s;
+  }
+  
+  .delay-3 {
+    animation-delay: 0.8s;
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+.btn-empresa {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #27ae60;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-empresa:hover {
+    background-color: #219150;
+  }
+
+a{
+    text-decoration: none;
+    color: inherit;
 }

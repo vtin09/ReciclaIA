@@ -1,0 +1,19 @@
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "axe/text-alternatives": "error",  
+    "axe/no-autofocus": "error",        
+    "axe/landmark-roles": "error",     
+    "axe/duplicate-id": "error",       
+    "performance/compress-images": "error", 
+    "performance/no-unloadable-scripts": "warn",
+    "seo/meta-robots": "error",         
+    "security/cors": "error",
+    "security/dns-prefetch": "warn",
+    "html/doctype": "error",
+    "html/indentation": ["error", 2],
+    "css/valid": "error"
+  }
+}

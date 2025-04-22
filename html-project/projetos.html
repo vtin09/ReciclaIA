@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projetos</title>
     <link rel="icon" type="" href="">
-    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/projetos.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -15,40 +14,14 @@
     <meta name="author" content="Reciclai Team">
 </head>
 <body>
-    <header>
-        <div class="header-logo">
-            <img src="https://i.postimg.cc/KzNPCgkf/logo.png" alt="Logo" srcset="">
-        </div>
-        
-        <div class="header-title">
-            <h1>Reciclaí</h1>
-        </div>
-        <div class="lgpd">
-            <a class="lgpd_a" href="https://docs.google.com/document/d/1__UhR25b3slWTqOkWqtFebr-d6z3qltp/edit?usp=sharing&ouid=102787854198886227945&rtpof=true&sd=true">
-                <img src="https://i.postimg.cc/sfkTQZWk/Logo-Lgpd.png" alt="" srcset="" width="150px" height="90px">
-          </a>
-        </div>
-        
-
-    </header>
-        <nav class="navbar">
-
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="projetos.html">Projetos</a></li>
-                    <li><a href="empresas.html">Empresas</a></li>
-                    <li><a href="ods.html">ODS</a></li>
-                   
-                </ul>
-            </div>
-        </nav>
-    
+    <div id="header"></div>
     <main>
-        <section>
+        <section class="container">
+            
             
             <div class="text">
                 <h2>Projeto de TCC (Trabalho e conclusão de Curso)</h2>
-                <h1>Reciclagem Iteligente Com Tecnologia (Reciclaí)</h1>
+                <h1>Reciclagem Inteligente Com Tecnologia (Reciclaí)</h1>
                 <p>Este projeto propõe um aplicativo inovador para incentivar a reciclagem de lixo, contribuindo diretamente para a preservação ambiental. Essa iniciativa está alinhada com os Objetivos de Desenvolvimento Sustentável (ODS) da ONU, promovendo a conscientização ambiental e incentivando a redução do desperdício. Além disso, a reciclagem é uma estratégia essencial para reduzir a quantidade de lixo enviada para os aterros sanitários, minimizando a poluição e seus impactos ambientais.</p>
                 <h3>Nossas motivações para a escolha do projeto</h3>
                 <div class="text-cinza">
@@ -62,23 +35,29 @@
                    
                 <p>implementação do nosso projeto trará benefícios tanto para o meio ambiente quanto para a sociedade. Ao incentivar a reciclagem e oferecer recompensas, esperamos criar uma cultura de consumo mais consciente e engajada. Nosso objetivo é inspirar a comunidade a adotar práticas sustentáveis e transformar a forma como lidamos com os resíduos.</p>
                 </div>
-            <div class="cena">
-                <div class="imge">
-                    <img src="https://i.postimg.cc/XNGpYVns/Transforme-res-duos-em-recompensas.png" alt="" srcset="">
-                </div>
-            </div>
+           
         </section>
-    </main>
-    <footer>
-        <p>&copy; 2025  Reciclaí. All rights reserved.</p>
-
-        
-
-        <div class="icons">
-            <img src="https://i.postimg.cc/htccsxc7/softhouse.png" alt="" srcset="" width="100px" height="80px">
-            <img src="https://i.postimg.cc/pX1XJRWM/TDM.png" alt="" srcset="" width="100px" height="80px">
+        <div class="cena">
+                <div class="imge">
+                    <img src="https://i.postimg.cc/hGscFKkB/Logo-projeto-gif.gif" srcset="" alt="Logo animada do projeto Reciclaí" height="auto" width="auto">
+                </div>
         </div>
-    </footer>
+    </main>
+    <div id="footer"></div>
+
+    <script >
+        fetch('/html-project/indexs/header.html')
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById('header').innerHTML = data;
+        })
+        
+        fetch('/html-project/indexs/footer.html')
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById('footer').innerHTML = data;
+        })
+    </script>
     <script src="js/scripts.js"></script>
 </body>
 </html>

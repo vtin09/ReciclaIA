@@ -14,38 +14,14 @@
     <meta name="author" content="Reciclai Team">
 </head>
 <body>
-    <header>
-        <div class="header-logo">
-            <img src="https://i.postimg.cc/KzNPCgkf/logo.png" alt="Logo" srcset="">
-        </div>
-        
-        <div class="header-title">
-            <h1>Reciclaí</h1>
-        </div>
-        <div class="lgpd">
-            <a class="lgpd_a" href="https://docs.google.com/document/d/1__UhR25b3slWTqOkWqtFebr-d6z3qltp/edit?usp=sharing&ouid=102787854198886227945&rtpof=true&sd=true" target="_blank" rel="noopener">
-                <img src="https://i.postimg.cc/sfkTQZWk/Logo-Lgpd.png" alt="" srcset="" width="150px" height="90px">
-          </a>
-        </div>
-        
-
-    </header>
-        <nav class="navbar">
-
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="projetos.html">Projetos</a></li>
-                    <li><a href="empresas.html">Empresas</a></li>
-                    <li><a href="ods.html">ODS</a></li>
-                   
-                </ul>
-            </div>
-        </nav>
+   <div id="header"></div>
     
     <main>
         <section>
             <div class="qr-code">
                 <img src="https://i.postimg.cc/RhJ7sCfV/qr-code.jpg" alt="" srcset="" width="400px" height="400px">
+                <button onclick="window.open()">Baixar APP</button>
+            </div>
             </div>
 
             <div class="text_h2">
@@ -55,15 +31,20 @@
 
         </section>
     </main>
-    <footer>
-        <p>&copy; 2025 Reciclaí. All rights reserved.</p>
+    <div id="footer"></div>
 
-        <div class="icons">
-            <img src="https://i.postimg.cc/htccsxc7/softhouse.png" alt="" srcset="" width="100px" height="80px">
-            <img src="https://i.postimg.cc/pX1XJRWM/TDM.png" alt="" srcset="" width="100px" height="80px">
-        </div>
-        
-    </footer>
-    <script src="js/scripts.js"></script>
+    <script >
+        fetch('/html-project/indexs/header.html')
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById('header').innerHTML = data;
+        })
+
+        fetch('/html-project/indexs/footer.html')
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById('footer').innerHTML = data;
+        })
+    </script>
 </body>
 </html>

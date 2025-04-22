@@ -1,170 +1,95 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+    min-height: 100vh;
 }
 
-header {
-    background-color: #298616;
-    padding: 10px 0 0 ;
-    
-    
-}
-
-.header-logo {
-    display: block;
-    margin: 0 auto;
-    max-width: 100px; 
-    height: auto;
-}
-
-.header-logo img {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    position:relative;
-}
-header h1 {
-    color: #ffffff;
-    text-align: center;;
-    -webkit-text-stroke: 1px black ;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    
-}
-
-.header-title{
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 10px;
-    color: #ffffff;
-    -webkit-text-stroke: 1px black;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.header-title img{
-    display: flex;
-    justify-content: flex-start;
-    margin-left: auto;
-    position: left;
-    margin-top: 10px;
-}
-/* Imagem LGPD alinhada ao topo e à esquerda */
-.lgpd {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-}
-.lgpd img {
-    max-width: auto;
-    max-height: auto;
-}
-nav {
-    
-    text-align: center;
-    background-color: #004d00;
-    padding: 10px 0;
-    height: 25px;
-    
-    
-}
-.navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-nav a {
-    color: #ffffff;
-    text-decoration: none;
-    padding: 10px 20px;
-    display: inline-block;
-
-}
-
-
-
-
-nav a:hover {
-    background-color: rgb(70, 71, 72);
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-    
-}
-
-li {
-    display: inline;
-    margin: 0 10px;
+main {
+    flex: 1; 
+    padding: 40px 20px; 
+    margin-top: 20px; 
 }
 
 .container {
-    width: 80%;
+    width: 90%;
+    max-width: 1200px;
     margin: auto;
-    overflow: hidden;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-.qr-code{
-    margin: 30px 80px 80px 150px;
-    position: relative;
-    top: 0;
+section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    text-align: center;
+}
+
+.qr-code {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
 }
 
 .qr-code img {
     border: #004d00 5px solid;
     border-radius: 10px;
+    width: 325px;
+    height: 325px;
+    object-fit: contain;
 }
 
-section {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
+/* Botão abaixo do QR Code */
+.qr-code button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
+.qr-code button:hover {
+    background-color: #219150;
+}
+
+/* Texto da seção */
 section h2, section p {
-    margin: 0px 300px 80px 150px;
-    position: relative;
-    top: 0;
-    font-family:Arial, Helvetica, sans-serif ;
+    max-width: 500px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px 0;
 }
 
-footer {
-    background: #298616;
-    color: #ffffff;
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
+/* Responsividade */
+@media (max-width: 768px) {
+    section {
+        flex-direction: column;
+        text-align: center;
+    }
 
-.parceiros {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    margin-top: 0px;
-    margin-left: 10px;
-    
-}
+    .qr-code img {
+        width: 160px;
+        height: 160px;
+    }
 
-.parceiros h4 {
-    color: #ffffff;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    font-size: 15px;
-    text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; 
-}
+    .qr-code button {
+        width: 80%;
+    }
 
-.icons {
-    display: flex;
-    justify-content: left;
-    margin-top: -50px;
-    margin-left: 200px;
-    
+    section h2, section p {
+        margin: 10px 0;
+        padding: 0 20px;
+    }
 }
-

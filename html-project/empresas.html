@@ -5,79 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Empresas Parceiras</title>
     <link rel="icon" type="" href="">
-    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/empresas.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="shortcut icon" href="https://i.postimg.cc/KzNPCgkf/logo.png" type="image/x-icon">
     <meta name="description" content="Reciclai - Projeto de trabalho de conclusão de curso, em Desenvolvimento de Software.">
     <meta name="keywords" content="recycling, sustainability, eco-friendly">
     <meta name="author" content="Reciclai Team">
-</head>
+  
 <body>
-    <header>
-        <div class="header-logo">
-            <img src="https://i.postimg.cc/KzNPCgkf/logo.png" alt="Logo" srcset="">
-        </div>
-        
-        <div class="header-title">
-            <h1>Reciclaí</h1>
-        </div>
-        <div class="lgpd">
-            <a class="lgpd_a" href="https://docs.google.com/document/d/1__UhR25b3slWTqOkWqtFebr-d6z3qltp/edit?usp=sharing&ouid=102787854198886227945&rtpof=true&sd=true">
-                <img src="https://i.postimg.cc/sfkTQZWk/Logo-Lgpd.png" alt="" srcset="" width="150px" height="90px">
-          </a>
-        </div>
-        
-
-    </header>
-        <nav class="navbar">
-
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="projetos.html">Projetos</a></li>
-                    <li><a href="empresas.html">Empresas</a></li>
-                    <li><a href="ods.html">ODS</a></li>
-                   
-                </ul>
-            </div>
-        </nav>
-    
+    <div id="header"></div>
     <main>
-        <section>
-            <div class="text">
-                <h1>Empresas Parceiras</h1>
-                <p>Conheça as empresas que estão colaborando com o projeto Reciclaí. Visando um mundo mais Sustentável</p>
-            </div>
-            <div class="card">
-                <div class="card-images">
-                     <img src="https://i.postimg.cc/htccsxc7/softhouse.png" alt="">
-                     <h2>Softhouse</h2>
-                     <p>A Softhouse é uma empresa de gestão pública e plotagem, está a bastante tempo no mercado. Eles apoiam o projeto Reciclaí</p>
-
-                     <a href="https://softhouse.inf.br/site2023/" target="_blank" rel="noopener" class="button">Visitar Site</a>
-                </div>
-                <div class="card-images">
-                    <img src="https://i.postimg.cc/pX1XJRWM/TDM.png" alt="">
-                    <h2>TDM</h2>
-                    <p>
-                        A TDM é uma loja de roupas criada por tres amigos empreendedores que tem uma paixão por moda. Eles apoiam o projeto Reciclaí.
-                    </p>
-                    <a href="https://tdmoutfit.com/" target="_blank" rel="noopener" class="button">Visitar Site</a>
-                </div>
-                    
-            </div>
+        <section class="intro">
+          <h2 class="fade-in">Empresas Parceiras:</h2>
         </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 Reciclaí. All rights reserved.</p>
+    
+        <section class="grid-empresas">
+          <div class="card fade-in">
+            <img src="https://i.postimg.cc/htccsxc7/softhouse.png" alt="Logo da Empresa" width="100px" height="100px" class="logo-empresa">
+            <h3>SoftHouse: Digitalização e Plotagem</h3>
+            <p>Desenvolvimento soluções tecnológicas para gestão pública.</p>       
+            <button class="btn-empresa"><a href=https://softhouse.inf.br/site2023/ target="_blank"rel="noopener">Visitar Site</a></button>
+          </div>
+          <div class="card fade-in delay-1">
+            <h3>Empresa sobre:</h3>
+            <p>Outra descrição de apoio à sustentabilidade e parceria com o Reciclaí.</p>
+            <button class="btn-empresa"><a href= * target="_blank"rel="noopener">Visitar Site</a></button>
+          </div>
+          <div class="card fade-in delay-2">
+            <h3>Empresa sobre:</h3>
+            <p>Contribuição relevante da empresa no contexto ambiental ou educacional.</p>
+            <button class="btn-empresa"><a href=* target="_blank"rel="noopener">Visitar Site</a></button>
+          </div>
+          <div class="card fade-in delay-3">
+            <h3>Empresa sobre:</h3>
+            <p>Suporte técnico ou incentivo financeiro ao projeto.</p>
+            <button class="btn-empresa"><a href=* target="_blank"rel="noopener">Visitar Site</a></button>
+          </div>
+        </section>
+      </main>
 
 
-        <div class="icons">
-            <img src="https://i.postimg.cc/htccsxc7/softhouse.png" alt="" srcset="" width="100px" height="80px">
-            <img src="https://i.postimg.cc/pX1XJRWM/TDM.png" alt="" srcset="" width="100px" height="80px">
-        </div>
-    </footer>
+    <div id="footer"></div>
+
+    <script >
+        fetch('/html-project/indexs/header.html')
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById('header').innerHTML = data;
+        })
+
+        fetch('/html-project/indexs/footer.html')
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById('footer').innerHTML = data;
+        })
+    </script>
     <script src="js/scripts.js"></script>
 </body>
 </html>
