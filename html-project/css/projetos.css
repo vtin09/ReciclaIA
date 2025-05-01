@@ -20,15 +20,15 @@
   
   .text h1 {
     font-size: 28px;
-    color: #2ecc71;
+    color: #298616;
     margin: 10px 0 20px;
     
     
   }
   
   .text h2 {
-    font-size: 20px;
-    color: #27ae60;
+    font-size: 16px;
+    color: #000000;
     margin-bottom: 15px;
   }
   
@@ -37,10 +37,12 @@
     margin: 25px 0 10px;
   }
   
-  .text h5 {
-    color: #524d4d;
+  .text h4 {
+    color: #0000008e;
     font-weight: 400;
     margin: 15px 0;
+    text-align: center;
+    line-height: 1.9;
   }
   
   .text p {
@@ -63,9 +65,9 @@
     max-width: auto;
     height: auto;
 
-    border-bottom: #524d4d 2px solid;
-    border-right: #524d4d 2px solid;
-    border-radius: 10px;
+    border-bottom: #0000008e 2px solid;
+    border-right: #0000008e 2px solid;
+    border-radius: 27px;
   }
   
   /* Responsivo */
