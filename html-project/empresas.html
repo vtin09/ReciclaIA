@@ -33,30 +33,23 @@
           </div>
           <div class="card fade-in delay-1">
             <h3>Empresa sobre:</h3>
-            <p>Apoio à sustentabilidade e parceria com o Reciclaí.</p>
+            <p>Apoie nossa ideia e comece você a tornar o mundo melhor.</p>
             <br>
             <button class="btn-empresa"><a href= * target="_blank"rel="noopener">Visitar Site</a></button>
           </div>
           <div class="card fade-in delay-2">
             <h3>Empresa sobre:</h3>
-            <p>Contribuição relevante da empresa no contexto ambiental ou educacional.</p>
+            <p>Coloque sua empresa aqui.</p>
             <br>
             <button class="btn-empresa"><a href=* target="_blank"rel="noopener">Visitar Site</a></button>
           </div>
           <div class="card fade-in delay-3">
             <h3>Empresa sobre:</h3>
-            <p>Suporte técnico ou incentivo financeiro ao projeto.</p>
+            <p>Apoie nosso projeto e nos ajude a tornar o mundo mais sustentável.</p>
             <br>
             <button class="btn-empresa"><a href=* target="_blank"rel="noopener">Visitar Site</a></button>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
+            
+            
           </div>
         </section>
       </main>
@@ -77,6 +70,24 @@
             document.getElementById('footer').innerHTML = data;
         })
     </script>
-    <script src="js/scripts.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+    const cards = document.querySelectorAll('.card');
+    
+    cards.forEach(card => {
+        // Add mouse move parallax effect
+        card.addEventListener('mousemove', (e) => {
+            const xAxis = (window.innerWidth / 2 - e.pageX) / 25;
+            const yAxis = (window.innerHeight / 2 - e.pageY) / 25;
+            card.querySelector('.card-inner').style.transform = `translateY(-10px) rotateX(${yAxis}deg) rotateY(${xAxis}deg)`;
+        });
+
+        // Reset position when mouse leaves
+        card.addEventListener('mouseleave', () => {
+            card.querySelector('.card-inner').style.transform = 'translateY(0) rotateX(0) rotateY(0)';
+        });
+    });
+});
+    </script>
 </body>
 </html>

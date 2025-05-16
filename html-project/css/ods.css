@@ -25,6 +25,11 @@ section img {
     
 }
 
+section img:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
 .ods-section h2 {
     text-align: center;
     margin: 0;

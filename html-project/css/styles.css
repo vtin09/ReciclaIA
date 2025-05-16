@@ -61,6 +61,8 @@ section {
 
 .qr-code button:hover {
     background-color: #298616;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
 }
 
 /* Texto da seção */
