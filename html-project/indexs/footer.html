@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>footer</title>
-
     <style>
-       
         footer {
             background: #298616;
             color: #ffffff;
@@ -17,77 +15,89 @@
             padding: 3px 6px;
             font-size: 14px;
         }
-        
-        /* Texto central do footer */
         footer p {
             margin: 0;
             text-align: center;
             flex: 1;
         }
-        
-        /* Área das empresas parceiras à esquerda */
         .parceiros {
             display: flex;
             flex-direction: column;
             align-items: flex-start;
         }
-        
-        /* Título da área de parceiros */
         .parceiros h4 {
             margin: 0 0 5px 0;
             font-size: 14px;
             text-shadow: 1px 1px 0 #000;
         }
-        
-        /* Ícones das empresas */
         .icons {
             display: flex;
             gap: 8px;
             flex-wrap: wrap;
             align-items: center;
         }
-        
         .icons a {
             display: block;
         }
-        
         .icons img {
             width: 100px;
             height: 100px;
             max-height: 50%;
         }
-        
-        /* Responsividade */
+        .icones {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        .icones img {
+            width: 30px;
+            height: 30px;
+            max-height: 40%;
+            transition: transform 0.5s;
+        }
+
+        .icones img:hover {
+            transform: scale(1.4);
+            transition: transform 0.5s;
+        }
         @media (max-width: 768px) {
             footer {
                 flex-direction: column;
                 align-items: center;
                 text-align: center;
             }
-        
             .parceiros {
                 align-items: center;
                 margin-bottom: 10px;
             }
-        
             .icons {
                 justify-content: center;
             }
+            .icones {
+                justify-content: center;
+                margin-top: 10px;
+            }
         }
-        
-        </style>
-            
+    </style>
 </head>
 <body>
     <footer>
-    <div class="parceiros">
+        <div class="parceiros">
             <div class="icons">
-                <img src="https://i.postimg.cc/htccsxc7/softhouse.png" alt="" srcset="" width="100px" height="80px">
-                
+                <img src="https://i.postimg.cc/htccsxc7/softhouse.png" alt="logo softhouse" width="100px" height="80px">
             </div>
-    </div>
-    <p>&copy; 2025 Reciclaí. All rights reserved.</p>
+        </div>
+        <p>&copy; 2025 Reciclaí. All rights reserved.</p>
+        <div class="icones">
+            <a href="https://wa.me/message/MLJ7JI6MP64NO1" target="_blank" rel="noopener">
+                <img src="https://i.postimg.cc/4yWcdLB0/whatsapp-icon.gif" alt="whastapp">
+            
+           <a href="mailto:reciclai.online@gmail.com?subject=Assunto%20do%20Email&body=Corpo%20da%20mensagem" target="_blank" rel="noopener"> 
+                <img src="https://i.postimg.cc/449jcCGZ/email-icon.gif" alt="email">
 
+        </div>
     </footer>
 </body>
 </html>

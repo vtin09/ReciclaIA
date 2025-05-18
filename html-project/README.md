@@ -1,26 +1,37 @@
-# HTML Project
+# Projeto HTML
 
-**Projeto simples de html, que contem uma pagina principal "home" e outras adicionais: ODS, Projetos, and Empresas.** 
+**Projeto simples de HTML, contendo uma página principal "Home" e outras adicionais: ODS, Projetos e Empresas.**
 
 ## Estrutura do Projeto
 
 ```
 html-project
-├── index.html        # Arquivo principal      Home pagina
-├── ods.html          # arquivo HTML da ODS page
-├── projetos.html     # HTML file for the Projetos paginas
-├── empresas.html      # HTML file for the Empresas pagina
+├── index.html        # Arquivo principal HTML (Home)
+├── ods.html          # Página da ODS
+├── projetos.html     # Página de Projetos
+├── empresas.html     # Página de Empresas
+├── README.md         # Documentação do projeto
 ├── css
-│   └── styles.css    # CSS file for styling the 
-│   └── ods.css       # CSS arquivo estilizando
- HTML pages
-├── js
-│   └── scripts.js    # JavaScript file for adding interactivity
-└── README.md         # Documentação do projeto
+│   └── styles.css    # Estilo da index.html
+│   └── ods.css       # Estilo da ods.html
+│   └── projetos.css  # Estilo da projetos.html
+│   └── empresas.css  # Estilo da empresas.html
+├── index
+│   └── footer.html   # Rodapé das páginas HTML
+│   └── header.html   # Cabeçalho das páginas HTML
 ```
 
-## Tecnologias Usadas
+## Tecnologias Utilizadas
 
 - HTML
 - CSS
 - JavaScript
+
+## Equipe
+
+- Time do projeto Reciclai
+- Estruturado por Vitor Oliveira da Silva Santos
+- Criado por Vitor Oliveira da Silva Santos
+- Editado por Eduardo Barboza
+- Wireframe criado por Eduardo Barboza
+- Documentação por Vitor Oliveira da Silva Santos
