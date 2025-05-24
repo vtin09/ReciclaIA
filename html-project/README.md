@@ -29,7 +29,7 @@ html-project
 
 ## Equipe
 
-- Time do projeto Reciclai
+- Time do projeto Recicla IA
 - Estruturado por Vitor Oliveira da Silva Santos
 - Criado por Vitor Oliveira da Silva Santos
 - Editado por Eduardo Barboza
