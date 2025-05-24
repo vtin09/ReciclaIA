@@ -1,4 +1,4 @@
-# Reciclaí
+# Recicla IA
 
 Projeto de Trabalho de Conclusão de Curso (TCC) focado em reciclagem inteligente com tecnologia.
 
