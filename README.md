@@ -16,7 +16,7 @@ O Reciclaí é um projeto que propõe um aplicativo inovador para incentivar a r
 
 - Estruturado por Vitor Oliveira da Silva Santos
 - Criado por Vitor Oliveira da Silva Santos
-- Editado por Edurado Barboza
+- Editado por Edurado Barboza e Vitor Oliveira
 - Wireframe criado por Edurado Barboza
 - Documentado por Vitor Oliveira Da Silva Santos
 
